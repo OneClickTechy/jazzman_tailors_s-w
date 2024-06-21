@@ -60,6 +60,18 @@ font-size: 2vw;
 .bright-text:last-child{
     font-size: 3vw;
 }
+.l-img,.r-img{
+    width: 15%;
+    height:auto;
+}
+.l-img img{
+    width:100%;
+    height: auto;
+}
+.r-img img{
+    width:100%;
+    height: auto;
+}
 
 /*nowrap*/
 .no-wrap{
