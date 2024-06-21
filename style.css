@@ -36,12 +36,15 @@ header {
   display: flex;
   width: 100%;
   justify-content: center;
+  animation-name: scl;
+  animation-duration:2s;
 }
 .header-left {
   width: 15%;
   height: auto;
   animation-name: cen-in;
-  animation-duration: 2s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
 }
 .header-left img {
   width: 100%;
@@ -51,7 +54,8 @@ header {
   display: flex;
   flex-direction: column;
   animation-name: cen-in;
-  animation-duration: 2s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
 }
 .header-right .adj {
   margin-left: 20%;
@@ -80,14 +84,14 @@ header {
   width: 100%;
   height: auto;
   animation-name: left-photo-in;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-timing-function: ease-int;
 }
 .r-img img {
   width: 100%;
   height: auto;
   animation-name: right-photo-in;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-timing-function: ease-out;
 }
 
@@ -97,6 +101,14 @@ header {
 }
 /*header end*/
 /*header-animation-start*/
+@keyframes scl {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
 @keyframes left-photo-in {
   from {
     transform: translate(-200px) rotate(-45deg) scale(0);
