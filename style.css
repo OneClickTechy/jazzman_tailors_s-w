@@ -1,0 +1,67 @@
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li a{text-decoration: none;}
+
+li{list-style: none;}
+
+img{display:block;}
+/*reset-end*/
+html{
+    
+}
+/*body preset*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+/*header*/
+header{
+    
+    background-image: linear-gradient(to right,#14252D , #14252D , rgba(21, 39, 45, 0.445));
+    display: flex;
+    width: 100%;
+    justify-content:center;
+   
+}
+.header-left{
+    width: 15%;
+    height: auto;
+}
+.header-left img{
+    width: 100%;
+    height:auto;
+}
+.header-right{
+    display: flex;
+    flex-direction: column;
+   
+}
+.header-right .adj{
+    margin-left: 20%;
+}
+.bright-text{
+    color: #FBD260;
+    font-size: 5vw;
+    text-shadow: 3px 3px 5px rgb(141, 157, 209);
+}
+.bright-text:first-child{
+font-family: "Playwrite NZ", cursive;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal;
+font-size: 2vw;
+}
+.bright-text:last-child{
+    font-size: 3vw;
+}
+
+/*nowrap*/
+.no-wrap{
+    white-space: nowrap;
+}
