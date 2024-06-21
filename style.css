@@ -161,9 +161,6 @@ nav {
 :is(.menu > li a:hover, menu > li a:focus) {
   color: #ffc77ead;
 }
-:is(.menu > li a:hover li, .menu > li a:active li) {
-  border-bottom: 2px solid #ffc77ead;
-}
 
 /*navigation bar end*/
 
@@ -199,6 +196,8 @@ nav {
 .master-heading {
   text-align: center;
   grid-column: 1 / -1;
+  color: #fbd260;
+  text-shadow: 2px 3px 5px rgba(226, 226, 226, 0.6);
   
 }
 .master-box-image {
@@ -216,6 +215,7 @@ nav {
 .highlight{
   font-weight: bold;
 }
+
 /*main content end*/
 
 /*laptop and desktop*/
