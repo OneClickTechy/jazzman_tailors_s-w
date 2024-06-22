@@ -17,7 +17,7 @@ img {
   display: block;
 }
 /*reset-end*/
-html{
+html {
   scroll-behavior: smooth;
 }
 /*body preset*/
@@ -165,16 +165,16 @@ nav {
 /*navigation bar end*/
 
 /*main content start*/
+/*master card design start*/
 .masters {
   display: grid;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit , minmax( 250px , 30%)); 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 30%));
   background-image: url(./assets/master-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .master-box {
@@ -184,21 +184,24 @@ nav {
   align-content: center;
   justify-content: center;
   padding: 2rem;
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,35,66,1) 100%);
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(0, 35, 66, 1) 100%
+  );
   max-width: 250px;
   border-radius: 27px;
-  box-shadow:  6px 6px 12px #9b9b9bbb,
-             -6px -6px 12px #ffffffa9;
+  box-shadow: 6px 6px 12px #9b9b9bbb, -6px -6px 12px #ffffffa9;
   margin-bottom: 2rem;
-  
 }
+
+
 .master-heading {
   text-align: center;
   grid-column: 1 / -1;
   color: #fbd260;
   text-shadow: 2px 3px 5px rgba(226, 226, 226, 0.6);
-  
 }
 .master-box-image {
   width: 100%;
@@ -211,18 +214,33 @@ nav {
   padding: 1rem 0;
   font-size: 1.3rem;
   font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px grey;
 }
-.highlight{
+q{
+  color: #ffffff;
+  text-shadow: 2px 2px 3px grey;
+}
+.highlight {
   font-weight: bold;
 }
 
+@keyframes card {
+  
+}
+
+/*master card design end*/
 /*main content end*/
 
 /*laptop and desktop*/
 @media (min-width: 768px) {
-  .masters{
+  .masters {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
+  .master-box:hover {
+    transform: translatey(50px) scale(1.1 , 1.1) skew(3deg);
+    transition-duration: 1s;
   
+  }
 }
