@@ -52,17 +52,17 @@
       <section id="masters" class="masters">
         <h2 class="master-heading">Our Masters</h2>
         <article class="master-box">
-          <figure class="master-box-image-caption"> 
+          <figure class="master-box-image-caption">
             <img
               src="https://picsum.photos/200/200?random=1"
               alt=""
               class="master-box-image"
             />
-            <figcaption class="master-box-image-caption">
+            <figcaption class="master-box-image-caption hide">
               Mr.Radhakrishnan
             </figcaption>
           </figure>
-          <q
+          <q class="hide"
             >Professional Tailor with <span class="highlight">20+</span> Years
             of Experience</q
           >
@@ -74,40 +74,49 @@
               alt=""
               class="master-box-image"
             />
-            <figcaption class="master-box-image-caption">
+            <figcaption class="master-box-image-caption hide">
               Ms.Muthulakshmi
             </figcaption>
           </figure>
-          <q
+          <q class="hide"
             >Professional Tailor with <span class="highlight">15+</span> Years
             of Experience</q
           >
         </article>
       </section>
 
-      <section id="services">
-        <article class="service-make">
-          <img
-            src="./assets/service-make.jpg"
-            alt=""
-            class="service-make-image"
-            height="300"
-            width="200"
-          />
-          <h2>Garments Making</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <section class="service">
+        <article class="service-head">
+          <img src="./assets/service.png" alt="service-icon" />
+          <h3>Our services</h3>
         </article>
-        <article class="service-alter">
-          <img
-            src="./assets/service-alter.jpg"
-            alt=""
-            class="service-alter-image"
-            height="300"
-            width="200"
-          />
-          <h2>Garments Alteration</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
+        <section class="grid-box">
+          <article class="service-box">
+            <figure class="fig">
+              <figcaption class="fig-info-m">Garments Making</figcaption>
+              <img
+                class="fig-bg"
+                src="./assets/service-make.jpg"
+                height="200"
+                width="200"
+                alt="service make"
+              />
+            </figure>
+          </article>
+
+          <article class="service-box">
+            <figure class="fig">
+              <figcaption class="fig-info-m">Garments Alteration</figcaption>
+              <img
+                class="fig-bg"
+                src="./assets/service-alter.jpg"
+                height="200"
+                width="200"
+                alt="service alteration"
+              />
+            </figure>
+          </article>
+        </section>
       </section>
     </main>
     <footer>
@@ -124,8 +133,10 @@
           <p>Ph.no : +91 9787849625</p>
         </article>
       </section>
+      <div class="invisible">
       UIcons by
       <a id="invisible" href="https://www.flaticon.com/uicons">Flaticon</a>
+      </div>
     </footer>
   </body>
 </html>

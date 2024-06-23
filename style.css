@@ -19,12 +19,17 @@ img {
 /*reset-end*/
 html {
   scroll-behavior: smooth;
+  background-image: url(./assets/master-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 /*body preset*/
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
   min-height: 100vh;
+  background-color: #78b6ec70;
 }
 
 /*header*/
@@ -172,9 +177,11 @@ nav {
   align-items: center;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 30%));
-  background-image: url(./assets/master-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: calc(100vh - 40px);
+  border: 3px solid rgb(8, 8, 78);
+  border-radius: 20px;
+
+  margin: 1rem;
 }
 
 .master-box {
@@ -196,12 +203,14 @@ nav {
   margin-bottom: 2rem;
 }
 
-
 .master-heading {
   text-align: center;
   grid-column: 1 / -1;
   color: #fbd260;
-  text-shadow: 2px 3px 5px rgba(226, 226, 226, 0.6);
+  background-color: rgba(134, 134, 134, 0.452);
+ border-radius: 20px;
+ padding: 1rem;
+ border: 1px solid white;
 }
 .master-box-image {
   width: 100%;
@@ -217,20 +226,13 @@ nav {
   color: #ffffff;
   text-shadow: 2px 2px 2px grey;
 }
-q{
+q {
   color: #ffffff;
   text-shadow: 2px 2px 3px grey;
 }
 .highlight {
   font-weight: bold;
 }
-
-@keyframes card {
-  
-}
-
-/*master card design end*/
-/*main content end*/
 
 /*laptop and desktop*/
 @media (min-width: 768px) {
@@ -239,8 +241,63 @@ q{
     justify-items: center;
   }
   .master-box:hover {
-    transform: translatey(50px) scale(1.1 , 1.1) skew(3deg);
+    transform: translatey(50px) scale(1.1, 1.1) skew(3deg);
     transition-duration: 1s;
-  
   }
+  /*master-card-info hide*/
+  .hide {
+    display: none;
+  }
+  .master-box:hover .hide {
+    display: block;
+  }
+}
+
+/*master card design end*/
+
+/*service area design start*/
+.service {
+  padding: 1rem;
+}
+.service *{
+  padding:0.5rem;
+}
+.service-head{
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid black;
+  border-radius: 10px;
+  background: #ffffff94;
+  padding: 0.3rem;
+}
+.service-head h3{
+  font-size:1.5rem;
+}
+.fig-info-m{
+  font-style: italic;
+  font-size: 1.3rem;
+  font-weight: 900;
+  border: 1px solid rgb(255, 255, 255);
+  border-left: 5px solid white;
+  background-color: rgba(240, 248, 255, 0.452);
+  border-top-right-radius: 3rem ;  
+}
+
+/*service area design end*/
+
+
+/*main content end*/
+
+footer > *{
+  padding: 1rem;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #14252d,
+    #14252d,
+    rgba(21, 39, 45, 0.445)
+  );
+}
+.invisible{
+ display: none;
 }
