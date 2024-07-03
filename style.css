@@ -301,7 +301,3 @@ footer > *{
 .invisible{
  display: none;
 }
-.address> p a{
-  text-decoration: none;
-  color: inherit;
-}
